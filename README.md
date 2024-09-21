@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Priyanshu Mishra - Portfolio Website
+
+This is my personal developer portfolio built with [Next.js](https://nextjs.org/), [React](https://reactjs.org/), and TailwindCSS for styling, serving as my website to showcase some of my projects, experiences, and personal interests/pursuits. 
+
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the Development Server](#running-the-development-server)
+- [Building for Production](#building-for-production)
+- [Exporting the Project](#exporting-the-project)
+- [Deployment](#deployment)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Features
+
+- Responsive design that works on various devices (different styling based on mobile/tablet/desktop views)
+- Dynamic project sections showcasing various engineering projects.
+- Integration of SVG icons and images.
+- Built with modern web technologies including TypeScript, React and Tailwind CSS.
 
 ## Getting Started
 
-First, run the development server:
+Follow these instructions to set up the project locally.
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+- A code editor (like [Visual Studio Code](https://code.visualstudio.com/))
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   https://github.com/priyanshu-mishra/priyanshumishra.com.git
+   ```
+
+2. Navigate to the project directory
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+### Running the Development Server
+
+To start the development server, run:
+
+ ```bash
+   npm run dev
+   ```
+Open your browser and go to [http://localhost:3000](http://localhost:3000) to see the application in action. The page will auto-update as you edit the files.
+
+### Building for Production
+
+To create an optimized production build, run:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+   npm run build
+   ```
+
+This command compiles the application and prepares it for deployment.
+
+### Exporting the Project
+
+To export the project as static files, run:
+
+```bash
+   npm run export
+   ```
+
+This will generate an `out` directory containing all the static files needed for deployment.
+
+## Deployment
+
+You can deploy the project using various platforms. Here’s how to deploy it on [Vercel](https://vercel.com/):
+
+1. Sign up or log in to Vercel.
+2. Click on "New Project" and import your GitHub repository.
+3. Follow the prompts to configure your project.
+4. Vercel will automatically deploy your project and provide a live URL.
+5. (Bonus) You can also deploy it directly through Vercel CLI (as I did, [check out this guide](https://vercel.com/docs/cli/deploying-from-cli))
+
+Alternatively, you can upload the contents of the `out` directory to your web hosting provider (like Hostinger) under the `public_html` directory. If you are deploying using nameservers, check the appropriate CNAME and A NAME settings, or you could also go the extra mile and use a VPS, but I'm sure you can find plenty of guides online on how to go on about any of those routes).
+
+## Folder Structure
+
+The project has the following folder structure:
+
+```
+portfolio-website/
+├── public/                # Static files (images, icons, etc.)
+├── src/                   # Source files
+│   ├── assets/            # Assets (images, icons)
+│   │   ├── images/        # Image files (PNG, JPG)
+│   │   └── icons/         # SVG icon files
+│   ├── components/        # Reusable components
+│   ├── sections/          # Different sections of the portfolio
+│   ├── app/               # Next.js app directory
+│   └── styles/            # Global styles
+├── .gitignore             # Git ignore file
+├── next.config.mjs        # Next.js configuration
+├── package.json           # Project metadata and dependencies
+└── README.md              # Project documentation
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Contributions are welcome! If you have suggestions for improvements or want to report a bug, please open an issue or submit a pull request.
 
-## Learn More
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
+For any inquiries or feedback, feel free to reach out:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Email**: priyanshu.mishra@nyu.edu
+- **Website**: [priyanshumishra.com](https://priyanshumishra.com)
+- **Instagram**: [@priyanshu.mishra_](https://www.instagram.com/priyanshu.mishra_/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+Thank you for checking out my portfolio! I hope you find it interesting or informative. Feel free to ping me on my socials or email me if you have any thoughts/would like to talk about a cool project/idea:)
